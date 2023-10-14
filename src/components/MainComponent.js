@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Contact from './ContactComponent';
+import Contact from './MoreInfo';
 import { NEWS } from '../shared/News';
 
 

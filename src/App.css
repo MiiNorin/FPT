@@ -40,3 +40,6 @@ address{
 .navbar-dark {
     background-color: #512DA8;
 }
+.nav-item:hover {
+    cursor: pointer;
+  }

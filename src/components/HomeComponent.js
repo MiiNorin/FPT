@@ -15,13 +15,12 @@ function RenderCard({ item }) {
                 <div style={{textAlign: 'left'}}>Date: {item.date}</div>
                 <CardText style={{ textAlign: 'justify', display: 'flex' }}>{item.description}</CardText>
             </CardBody>
-            <div style={{ marginBottom: '10px' }}>
+            <div style={{ paddingBottom: '10px' }}>
                 <Link to={{ pathname: "/contactus", state: { item: item } }}>
                     <Button
                         onClick={() => setShowDetails(!showDetails)}
-                        text="Xem thêm"
-                        style={{ width: '100px', height: '30px', color: '#58257b' }}
-                    />
+                        >More</Button>
+                    
                 </Link>
             </div>
         </Card>
