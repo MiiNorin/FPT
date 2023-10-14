@@ -8,8 +8,16 @@
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; 
 }
-
+.custom-button {
+    width: 100px; /* Chiều rộng mong muốn */
+    height: 40px; /* Chiều cao mong muốn */
+    /* Các thuộc tính CSS khác để tùy chỉnh kiểu dáng */
+}
 .footer{
     background-color: #D1C4E9;
     margin:0px auto;
