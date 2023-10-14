@@ -12,10 +12,11 @@ function RenderCard({ item }) {
             <CardBody>
                 <CardTitle style={{ fontWeight: 'bold', fontSize: '20px' }}>{item.name}</CardTitle>
                 {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null}
+                <div style={{textAlign: 'left'}}>Date: {item.date}</div>
                 <CardText style={{ textAlign: 'justify', display: 'flex' }}>{item.description}</CardText>
             </CardBody>
             <div style={{ marginBottom: '10px' }}>
-                <Link to="/contactus"> 
+                <Link to={{ pathname: "/contactus", state: { item: item } }}>
                     <Button
                         onClick={() => setShowDetails(!showDetails)}
                         text="Xem thêm"
@@ -33,7 +34,7 @@ function Home(props) {
     return (
         <div className="container">
             <div className="row">
-                {props.promotion.map((item) => (
+                {props.new.map((item) => (
                     <div key={item.id} className="col-md-4 col-12 mb-3">
                         <RenderCard item={item} />
                     </div>

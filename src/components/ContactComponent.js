@@ -8,7 +8,7 @@ function Contact() {
     return (
         <div className="container">
             {item && (
-                <div>
+                <div style={{paddingTop: '10px'}}>
                     <h2>{item.name}</h2>
                     <p>{item.description}</p>
                 </div>

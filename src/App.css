@@ -16,6 +16,7 @@
 .custom-button {
     width: 100px; /* Chiều rộng mong muốn */
     height: 40px; /* Chiều cao mong muốn */
+    color: aliceblue;
     /* Các thuộc tính CSS khác để tùy chỉnh kiểu dáng */
 }
 .footer{
